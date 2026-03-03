@@ -11,7 +11,7 @@ const artisansRouter = require('./routes/artisans');
 const app = express();
 
 // 3. Middlewares globaux
-app.use(cors());
+app.use(cors({ origin: process.env.FRONTEND_URL }));
 app.use(express.json());
 
 // 4. Routes
