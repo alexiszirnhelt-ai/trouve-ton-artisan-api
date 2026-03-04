@@ -22,10 +22,10 @@ app.use('/api/artisans', artisansRouter);
 const PORT = process.env.PORT || 3000;
 
 const start = async () => {
-  await sequelize.sync({ alter: true });
+  await testConnexion();
+  await sequelize.sync();
   app.listen(PORT, () => {
     console.log(`Serveur démarré sur le port ${PORT}`);
-    testConnexion();
   });
 };
 
