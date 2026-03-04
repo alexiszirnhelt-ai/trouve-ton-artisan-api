@@ -11,7 +11,8 @@ const getTopArtisans = async (req, res) => {
     });
     res.json(artisans);
   } catch (error) {
-    res.status(500).json({ message: error.message });
+    console.error(error);
+    res.status(500).json({ message: 'Une erreur est survenue.' });
   }
 };
 
@@ -26,7 +27,8 @@ const getAllArtisans = async (req, res) => {
     const artisans = await Artisan.findAll({ include });
     res.json(artisans);
   } catch (error) {
-    res.status(500).json({ message: error.message });
+    console.error(error);
+    res.status(500).json({ message: 'Une erreur est survenue.' });
   }
 };
 
@@ -40,7 +42,8 @@ const searchArtisans = async (req, res) => {
     });
     res.json(artisans);
   } catch (error) {
-    res.status(500).json({ message: error.message });
+    console.error(error);
+    res.status(500).json({ message: 'Une erreur est survenue.' });
   }
 };
 
@@ -55,7 +58,8 @@ const getArtisanById = async (req, res) => {
     }
     res.json(artisan);
   } catch (error) {
-    res.status(500).json({ message: error.message });
+    console.error(error);
+    res.status(500).json({ message: 'Une erreur est survenue.' });
   }
 };
 

@@ -22,11 +22,16 @@ app.use('/api/artisans', artisansRouter);
 const PORT = process.env.PORT || 3000;
 
 const start = async () => {
-  await testConnexion();
-  await sequelize.sync();
-  app.listen(PORT, () => {
-    console.log(`Serveur démarré sur le port ${PORT}`);
-  });
+  try {
+    await testConnexion();
+    await sequelize.sync();
+    app.listen(PORT, () => {
+      console.log(`Serveur démarré sur le port ${PORT}`);
+    });
+  } catch (error) {
+    console.error('Erreur au démarrage du serveur :', error);
+    process.exit(1);
+  }
 };
 
 start();

@@ -5,7 +5,8 @@ const getAllCategories = async (req, res) => {
     const categories = await Categorie.findAll();
     res.json(categories);
   } catch (error) {
-    res.status(500).json({ message: error.message });
+    console.error(error);
+    res.status(500).json({ message: 'Une erreur est survenue.' });
   }
 };
 
