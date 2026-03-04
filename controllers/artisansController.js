@@ -7,6 +7,7 @@ const getTopArtisans = async (req, res) => {
     const artisans = await Artisan.findAll({
       where: { top: true },
       limit: 3,
+      include: [{ model: Specialite }],
     });
     res.json(artisans);
   } catch (error) {
@@ -35,6 +36,7 @@ const searchArtisans = async (req, res) => {
     const { nom } = req.query;
     const artisans = await Artisan.findAll({
       where: { nom: { [Op.like]: `%${nom}%` } },
+      include: [{ model: Specialite }],
     });
     res.json(artisans);
   } catch (error) {

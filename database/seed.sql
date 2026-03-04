@@ -40,7 +40,7 @@ INSERT INTO specialites (nom, categorieId) VALUES
 
 -- 4. Insertion des artisans
 INSERT INTO artisans (nom, note, ville, apropos, email, siteweb, top, specialiteId) VALUES
-('Boucherie Dumont', 4.5, 'Lyon', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus eleifer lorem ipsum dolor sit amet.', 'boucherie.dumond@gmail.com', NULL, 0, 1),
+('Boucherie Dumont', 4.5, 'Lyon', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus eleifer lorem ipsum dolor sit amet.', 'boucherie.dumont@gmail.com', NULL, 0, 1),
 ('Au pain chaud', 4.8, 'Montélimar', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus eleifer lorem ipsum dolor sit amet.', 'aupainchaud@hotmail.com', NULL, 1, 2),
 ('Chocolaterie Labbé', 4.9, 'Lyon', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus eleifer lorem ipsum dolor sit amet.', 'chocolaterie-labbe@gmail.com', 'https://chocolaterie-labbe.fr', 1, 3),
 ('Traiteur Truchon', 4.1, 'Lyon', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus eleifer lorem ipsum dolor sit amet.', 'contact@truchon-traiteur.fr', 'https://truchon-traiteur.fr', 0, 4),
@@ -52,7 +52,7 @@ INSERT INTO artisans (nom, note, ville, apropos, email, siteweb, top, specialite
 ('Amitee Lécuyer', 4.5, 'Annecy', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus eleifer lorem ipsum dolor sit amet.', 'a.amitee@hotmail.com', 'https://lecuyer-couture.com', 0, 10),
 ('Ernest Carignan', 5.0, 'Le Puy-en-Velay', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus eleifer lorem ipsum dolor sit amet.', 'e-carigan@hotmail.com', NULL, 0, 11),
 ('Royden Charbonneau', 3.8, 'Saint-Priest', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus eleifer lorem ipsum dolor sit amet.', 'r.charbonneau@gmail.com', NULL, 0, 12),
-('Leala Dennis', 3.8, 'Chambéry', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus eleifer lorem ipsum dolor sit amet.', 'l.dennos@hotmail.fr', 'https://coiffure-leala-chambery.fr', 0, 12),
+('Leala Dennis', 3.8, 'Chambéry', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus eleifer lorem ipsum dolor sit amet.', 'l.dennis@hotmail.fr', 'https://coiffure-leala-chambery.fr', 0, 12),
 ('C\'est sup\'hair', 4.1, 'Romans-sur-Isère', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus eleifer lorem ipsum dolor sit amet.', 'sup-hair@gmail.com', 'https://sup-hair.fr', 0, 12),
 ('Le monde des fleurs', 4.6, 'Annonay', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus eleifer lorem ipsum dolor sit amet.', 'contact@le-monde-des-fleurs-annonay.fr', 'https://le-monde-des-fleurs-annonay.fr', 0, 13),
 ('Valérie Laderoute', 4.5, 'Valence', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus eleifer lorem ipsum dolor sit amet.', 'v-laredoute@gmail.com', NULL, 0, 14),
