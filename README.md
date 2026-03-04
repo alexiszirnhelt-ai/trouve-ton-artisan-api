@@ -17,8 +17,8 @@ API REST développée avec Node.js, Express et Sequelize permettant de gérer et
 ### 1. Cloner le repo
 
 ```bash
-git clone <url-du-repo>
-cd trouve-ton-artisan-back-end-1
+git clone https://github.com/alexiszirnhelt-ai/trouve-ton-artisan-api.git
+cd trouve-ton-artisan-api
 ```
 
 ### 2. Installer les dépendances
@@ -39,6 +39,8 @@ DB_PORT=3306
 DB_NAME=trouve_ton_artisan
 DB_USER=root
 DB_PASSWORD=
+
+FRONTEND_URL=http://localhost:5173
 ```
 
 ### 4. Créer la base de données
