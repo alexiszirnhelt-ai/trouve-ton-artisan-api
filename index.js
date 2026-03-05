@@ -11,7 +11,12 @@ const artisansRouter = require('./routes/artisans');
 const app = express();
 
 // 3. Middlewares globaux
-app.use(cors({ origin: process.env.FRONTEND_URL }));
+app.use(cors({
+  origin: [
+    process.env.FRONTEND_URL,
+    /\.vercel\.app$/  // accepte toutes les URLs *.vercel.app
+  ]
+}));
 app.use(express.json());
 
 // 4. Routes
